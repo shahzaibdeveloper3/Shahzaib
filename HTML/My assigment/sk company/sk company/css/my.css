@@ -1,0 +1,178 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+
+		border: 1px solid black;
+	background-color: white;
+	width: 100%;
+	height: 70px;
+	display: flex;
+}
+
+.header-logo {
+	width: 20%;
+	height: 70px;
+}
+
+.logo {
+
+	width: 80px;
+	height: 80px;
+}
+
+.header-btn {
+	padding-top: 25px;
+	width: 60%;
+	height: 45px;
+}
+
+.btn {
+
+	color: black;
+	padding: 10px;
+	margin: 15px;
+}
+
+.cheik-dv {
+
+	padding-top: 25px;
+	width: 20%;
+	height: 45px;
+}
+
+.cheik-btn {
+	background-color: darkslategrey;
+	color: white;
+	margin: 10px;
+	padding: 8px;
+}
+
+.body-dv {
+	border: 2px solid black;
+	width: 99%;
+	height: auto;
+}
+
+.body-img {
+
+	width: 100%;
+	height: auto;
+}
+
+.satis {
+	color: white;
+	background-color: rgb(45, 55, 55);
+	border: 2px solid black;
+	width: 100%;
+	height: 20px;
+}
+
+.men-dv {
+	background-color: transparent;
+	display: flex;
+	background-color: lightgray;
+	border: 2px solid black;
+	width: 100%;
+	height: 400px;
+
+}
+
+.icon-img {
+
+	background-color: white;
+	box-shadow: 5px 5px 11px;
+	margin: 45px;
+	margin-left: 100px;
+	border: 2px solid black;
+	width: 19%;
+	height: 320px;
+}
+
+.img {
+	width: 260px;
+	height: 180px;
+}
+
+.hd-txt {
+	color: black;
+	width: 100%;
+	height: 20px;
+}
+
+.txt {
+	padding: 5px 5px;
+	width: 100%;
+	height: 50px;
+}
+
+.read-btn {
+	padding-top: 12px;
+	padding-left: 90px;
+	width: 67%;
+	height: 30px;
+}
+
+.btn-txt {
+	color: white;
+	background-color: darkslategray;
+	padding: 5px;
+	border-radius: 8px;
+}
+
+.logo-dv {
+
+	border: 2px solid black;
+	width: 100%;
+	height: 300px;
+}
+
+.footer-2 {
+
+	background-color: white;
+	border: 2px solid black;
+	width: 100%;
+	height: 300px;
+}
+
+.txt-hd {
+
+
+	width: 15%;
+	height: 200px;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.footer {
+	display: flex;
+}
+
+.footer_logo {
+	display: flex;
+}
+
+.footer_text {
+
+	display: block;
+	width: 50%;
+	padding: 40px;
+}
+
+.footer_btn {
+
+	padding: 5px 10px;
+	background-color: blue;
+	color: white;
+}
+
+.nikon {
+	width: 100px;
+	height: 80px;
+}

@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+            'Helvetica Neue', sans-serif; */
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+        }
+
+        .btn {
+            color: white;
+        }
+
+        .header {
+            position: fixed;
+            display: block;
+            width: 100%;
+            height: 90px;
+        }
+
+        .become_head {
+            align-items: center;
+            display: flex;
+            background-color: #F85606;
+            width: 100%;
+            height: 30px;
+        }
+
+        .become_btn1 {
+            color: rgb(255, 255, 255);
+            margin-left: 180px;
+            font-size: 0.9rem;
+        }
+
+        .become_btn1:hover {
+            color: #FDCFB8;
+        }
+
+
+        .become_btn2 {
+            color: rgb(255, 255, 255);
+            margin-left: 20px;
+            font-size: 0.9rem;
+        }
+
+        .become_btn2:hover {
+            color: #FDCFB8;
+        }
+
+        .save_more {
+            padding-top: 8px;
+            background-color: #AD3C04;
+            width: 10%;
+            height: 20px;
+            border-radius: 5px;
+            margin-left: 550px;
+            color: white;
+            font-size: 0.9rem;
+            align-items: center;
+            display: flex;
+            padding-bottom: 5px;
+        }
+
+        .save_more_logo {
+            text-align: center;
+            margin: 5px;
+            width: 15%;
+            border-radius: 5px;
+            height: 20px;
+            padding-bottom: 5px;
+        }
+
+        .header2 {
+            display: flex;
+            background-color: #F85606;
+            width: 100%;
+            height: 60px;
+        }
+
+        .daraz_logo {
+            width: 10%;
+            height: 60px;
+            margin-left: 170px;
+        }
+
+        .categories {
+            width: 6%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .serch_bar_dv {
+            display: flex;
+            width: 50%;
+            height: 60px;
+        }
+
+        .serch_bar {
+            background-color: white;
+            width: 95%;
+            height: 40px;
+            border-radius: 8px;
+            align-items: center;
+            display: flex;
+            margin: 8px;
+        }
+
+        .serch_text {
+            color: #B79E9E;
+            margin-left: 10px;
+        }
+
+        .serch_icon {
+            display: flex;
+            width: 7%;
+            height: 30px;
+            margin-left: 550px;
+            border-radius: 8px;
+            background-color: #FFE1D2;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            margin-left: 15px;
+        }
+
+        .login {
+            border-right: 2px solid white;
+            width: 10%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .sign_up {
+            margin: 10px;
+            margin-top: 10px;
+            width: 5%;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .sign_up_txt {
+            margin-left: 5px;
+            color: white;
+        }
+
+        .sign_up:hover {
+            background-color: #DF4D05;
+        }
+
+        .login {
+            border-radius: 8px;
+            width: 5%;
+            height: 35px;
+            margin-top: 10px;
+        }
+
+        .login:hover {
+            background-color: #DF4D05;
+        }
+
+        .login_icon {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            width: 40%;
+            height: 35px;
+        }
+
+        .EN {
+            margin: 10px;
+            width: 5%;
+            height: 35px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .EN:hover {
+            background-color: #DF4D05;
+        }
+
+        .en_txt {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            color: white;
+
+        }
+
+        .home_dv {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        .home_btn {
+            font-size: 0.9rem;
+            color: #888282;
+            margin-left: 175px;
+        }
+
+        .home_btn:hover {
+            color: #F85606;
+        }
+
+        .home_btn2 {
+            color: #888282;
+            margin-left: 15px;
+            font-size: 0.9rem;
+        }
+
+        .home_btn2:hover {
+            color: #F85606;
+        }
+
+        .home_btn3 {
+            color: #F85606;
+            margin-left: 15px;
+            font-size: 0.9rem;
+        }
+
+        hr {
+            margin-right: 150px;
+            border-bottom: 1px solid #FFFFFF;
+            margin-left: 170px;
+        }
+
+        .men_dv {
+            width: 100%;
+            display: flex;
+            height: 420px;
+        }
+
+        .filter_dv_men {
+            width: 25%;
+            height: 420px;
+            display: block;
+            justify-content: right;
+        }
+
+        .filter_dv {
+            margin-left: 170px;
+            width: 55%;
+            height: 420px;
+        }
+
+        .filter_text {
+            display: block;
+            width: 100%;
+            height: 30px;
+            margin-top: 60px;
+            font-size: 1.4rem;
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+        }
+
+        .promotion_dv {
+            width: 99%;
+            height: 30px;
+            background-color: #FFFFFF;
+            margin-top: 20px;
+            font-size: 1.3rem;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        .free_men {
+            margin-top: 5px;
+            padding: 4px;
+            border: 1px solid lightgray;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            width: 57%;
+            height: 25px;
+        }
+
+        .free_men:hover {
+            border: 2px solid #F96F2B;
+        }
+
+        .free_logo {
+            display: flex;
+            align-items: center;
+            width: 30%;
+            height: 25px;
+            border-radius: 8px;
+        }
+
+        .text_delivery {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .best_men {
+            padding: 4px;
+            border: 1px solid lightgray;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            width: 80%;
+            height: 25px;
+            border-radius: 8px;
+        }
+
+        .best_men:hover {
+            border: 2px solid #F96F2B;
+        }
+
+        .best_logo {
+            display: flex;
+            align-items: center;
+            width: 25%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .best_price {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .mall_men {
+            padding: 4px;
+            border: 1px solid lightgray;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            width: 60%;
+            height: 25px;
+            border-radius: 8px;
+        }
+
+        .mall_men:hover {
+            border: 2px solid #F96F2B;
+        }
+
+        .mall_logo {
+            display: flex;
+            align-items: center;
+            width: 25%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .mall_text {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .icon_daraz_men {
+            padding: 4px;
+            border: 1px solid lightgray;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            width: 60%;
+            height: 25px;
+            border-radius: 8px;
+        }
+
+        .icon_daraz_men:hover {
+            border: 2px solid #F96F2B;
+        }
+
+        .icon_daraz_logo {
+            display: flex;
+            align-items: center;
+            width: 25%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .icon_daraz_text {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .cash_men {
+            padding: 4px;
+            border: 1px solid lightgray;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            width: 60%;
+            height: 25px;
+            border-radius: 8px;
+        }
+
+        .cash_men:hover {
+            border: 2px solid #F96F2B;
+        }
+
+        .cash_logo {
+            display: flex;
+            align-items: center;
+            width: 25%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .cash_text {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .Installment_men {
+            padding: 4px;
+            border: 1px solid lightgray;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            width: 50%;
+            height: 25px;
+            border-radius: 8px;
+        }
+
+        .Installment_men:hover {
+            border: 2px solid #F96F2B;
+        }
+
+        .Installment_logo {
+            display: flex;
+            align-items: center;
+            width: 30%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .Installment_text {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 25px;
+            font-size: 0.8rem;
+            border-radius: 8px;
+            color: #4C4C4C;
+        }
+
+        .card_item_men {
+            display: block;
+            width: 75%;
+            height: 420px;
+        }
+
+        .item_dv_men {
+            display: flex;
+            width: 100%;
+            height: 50px;
+        }
+
+        .item_found_men {
+            display: flex;
+            width: 100%;
+            height: 50px;
+        }
+
+        .item_found_text {
+            margin-left: 50px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            width: 11%;
+            height: 50px;
+        }
+
+        .laptop_text {
+            color: #DF4D05;
+            display: flex;
+            align-items: center;
+            width: 40%;
+            height: 50px;
+            ;
+        }
+
+        .short_by {
+            display: flex;
+            align-items: center;
+            width: 6%;
+            height: 50px;
+        }
+
+        .best_match_dv {
+            display: flex;
+            align-items: center;
+            margin-top: 6px;
+            width: 17%;
+            height: 35px;
+            border-radius: 20px;
+            ;
+        }
+
+        .best_text {
+            color: black;
+            margin-left: 5px;
+        }
+
+        .viwe_men {
+            margin-left: 5px;
+            display: flex;
+            align-items: center;
+            width: 3.5%;
+            height: 50px;
+
+        }
+
+        .viwe_icon {
+            display: flex;
+            align-items: center;
+            width: 3.5%;
+            height: 50px;
+            margin-left: 5px;
+        }
+
+
+        .card_men {
+            display: flex;
+            width: 100%;
+            height: 365px;
+        }
+
+        .card1 {
+            margin-left: 45px;
+            margin-top: 20px;
+            width: 18%;
+            height: 320px;
+        }
+
+        .card1:hover {
+            box-shadow: 1px 1px 1px 1px;
+            color: rgb(152, 168, 185);
+        }
+
+        .card1_img {
+            width: 100%;
+            height: 170px;
+            /* background-size: auto; */
+        }
+
+        .card1_text_dv {
+            width: 100%;
+            height: 40px;
+        }
+
+        .text1 {
+            color: rgb(0, 0, 0);
+            margin-top: 15px;
+        }
+
+        .text1:hover {
+            color: #10ADF2;
+        }
+
+        .star_dv {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 25px;
+        }
+
+        .star_text {
+            margin-left: 5px;
+            display: flex;
+            align-items: center;
+            color: darkgray;
+            font-size: 0.7rem;
+        }
+
+        .star {
+            color: yellow;
+            font-size: 0.5rem;
+        }
+
+        .free_delevery {
+            color: white;
+            width: 30%;
+            height: 15px;
+            border-radius: 5px;
+        }
+
+        .free {
+            margin-top: 2px;
+            display: flex;
+            justify-content: center;
+            font-size: 0.6rem;
+            color: #4379d7;
+            border: 1px solid;
+        }
+
+        .Rs_dv {
+            display: flex;
+            color: #F85606;
+            width: 100%;
+            height: 30px;
+        }
+
+        .Rs {
+            font-size: 1.3rem;
+            color: #F85606;
+        }
+
+        .Rs_del {
+            margin-left: 5px;
+            width: 30%;
+            height: 40px;
+        }
+
+        .no_dis {
+            margin-top: 5px;
+            color: #4C4C4C;
+            font-size: 0.6rem;
+        }
+
+        /* end off header */
+        .product2_men_dv {
+            display: flex;
+            width: 100%;
+            height: 400px;
+        }
+
+        .name2_dv {
+            display: block;
+            width: 25%;
+            height: 400px;
+        }
+
+        .category_dv {
+            margin-left: 165px;
+            width: 56%;
+            height: 120px;
+        }
+
+        .Category {
+            color: rgb(25, 24, 24);
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+            width: 100%;
+            height: 40px;
+        }
+
+        .traditional {
+            margin-top: 5px;
+            width: 100%;
+            height: 20px;
+        }
+
+        .traditional:hover {
+            color: #F85606;
+        }
+
+        .laptop {
+            margin-top: 5px;
+            color: #F85606;
+            width: 100%;
+            height: 20px;
+        }
+
+        .brand_dv {
+            margin-left: 165px;
+            width: 56%;
+            height: 305px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            color: rgb(23, 23, 23);
+            margin-top: 10px;
+            width: 100%;
+            height: 30px;
+            font-size: 0.8rem;
+        }
+
+        .hp {
+            margin-left: 10px;
+            color: #8a8888;
+            width: 90%;
+            height: 25px;
+        }
+
+        .viwe_more {
+            color: #F85606;
+            width: 90%;
+            height: 25px;
+        }
+
+
+        .prodect2_dv {
+
+            display: flex;
+            width: 75%;
+            height: 400px;
+        }
+
+        .prodect2_card1 {
+            margin-left: 45px;
+            margin-top: 40px;
+            width: 18%;
+            height: 320px;
+        }
+
+        .prodect2_card1:hover {
+            box-shadow: 1px 1px 1px 1px;
+            color: rgb(152, 168, 185);
+        }
+
+        .prodect2_card1_img {
+            width: 100%;
+            height: 170px;
+        }
+
+        .prodect2_text {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+        }
+
+        .text2 {
+            color: rgb(0, 0, 0);
+        }
+
+        .text2:hover {
+            color: #10ADF2;
+        }
+
+        .prodect2_star_dv {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 25px;
+        }
+
+        .star2 {
+            color: yellow;
+            font-size: 0.5rem;
+        }
+
+        .prodect2_free_delevery {
+            color: white;
+            width: 30%;
+            height: 15px;
+            border-radius: 5px;
+        }
+
+        .prodect2_free {
+            margin-top: 2px;
+            display: flex;
+            justify-content: center;
+            font-size: 0.6rem;
+            color: #4379d7;
+            border: 1px solid #4379d7;
+        }
+
+        .prodect2_Rs_dv {
+            display: flex;
+            color: #F85606;
+            width: 100%;
+            height: 30px;
+        }
+
+        .Rs2 {
+            font-size: 1.3rem;
+            color: #F85606;
+        }
+
+        .Rs2_del {
+            margin-left: 20px;
+            width: 50%;
+            height: 50px;
+        }
+
+        .no2_dis {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            margin-top: 5px;
+            color: #4C4C4C;
+            font-size: 0.6rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        var vhtml       
+        for(let i = 0; i < 5; i++ ){
+
+        }
+    </script> 
+
+    <div class="header">
+        <div class="become_head">
+            <a class="become_btn1" href="#"> Become a Seller</a>
+            <a class="become_btn2" href="#"> Daraz Affiliate Program</a>
+            <a class="become_btn2" href="#"> Help & Support</a>
+            <a class="become_btn2" href="#"> Daraz Logistic Partner</a>
+            <div class="save_more">
+                <div class="save_more_logo">
+                    <img src="./images/save more icon/Save more logo.png" width="18px">
+                </div>
+                <a class="btn" href="#"> <b> Save More on App </b> </a>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="daraz_logo">
+                <img src="./images/daraz logo/daraz logo.png" width="130px">
+            </div>
+            <div class="categories">
+                <a class="btn" href="#"> <b>Categories </b><i class="fa-light fa-caret-down"></i></a>
+            </div>
+            <div class="serch_bar_dv">
+                <div class="serch_bar">
+                    <a class="serch_text" href="#">Search in Daraz</a>
+                    <div class="serch_icon">
+                        <a href="#"> <img class="icon" src="./images/search icon/search_icon.png" width="20px"
+                                height="20px"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="login">
+                <div class="login_icon">
+                    <img src="./images/login icon/login_icon.png" width="20px" height="20px">
+                </div>
+                <a class="btn" href="#"> Login</a>
+            </div>
+            <div class="sign_up">
+                <a class="sign_up_txt" href="#">Sign Up</a>
+            </div>
+            <div class="EN">
+                <a class="en_txt" href="#"> EN</a>
+            </div>
+        </div>
+    </div>
+    <!--    END OF HEADER -->
+    <div class="home_dv">
+        <a class="home_btn" href="#"> Home /</a>
+        <a class="home_btn2" href="#"> Computers & Laptops / </a>
+        <a class="home_btn3" href="#"> Laptops </a>
+    </div>
+    <br>
+    <hr>
+    <!--    END OF HEADER -->
+    <div class="men_dv">
+        <div class="filter_dv_men">
+            <div class="filter_dv">
+                <div class="filter_text">
+                    <b> Filters </b>
+                    <div class="promotion_dv">
+                        Promotion & Servies
+                    </div>
+                    <!--    END OF HEADER -->
+                    <div class="free_men">
+                        <div class="free_logo">
+                            <img src="./images/free delevery icon/free png.png" width="20px">
+                        </div>
+                        <div class="text_delivery">
+                            <a href="#"> Free Delivery</a>
+                        </div>
+                    </div>
+                    <!--    END OF HEADER -->
+
+                    <div class="best_men">
+                        <div class="best_logo">
+                            <img src="./images/best price icon/best price logo.png" width="20px">
+                        </div>
+                        <div class="best_price">
+                            <a href="#">Best Price Guranteed </a>
+                        </div>
+                    </div>
+                    <!--    END OF HEADER -->
+                    <div class="mall_men">
+                        <div class="mall_logo">
+                            <img src="./images/Authentic Brands icon/mall logo.png" width="20px">
+                        </div>
+                        <div class="mall_text">
+                            <a href="#">Authentic Brands </a>
+                        </div>
+                    </div>
+                    <!--    END OF HEADER -->
+                    <div class="icon_daraz_men">
+                        <div class="icon_daraz_logo">
+                            <img src="./images/daraz verified icon/daraz icon.png" width="20px">
+                        </div>
+                        <div class="icon_daraz_text">
+                            <a href="#">Daraz Verified </a>
+                        </div>
+                    </div>
+                    <!--    END OF HEADER -->
+                    <div class="cash_men">
+                        <div class="cash_logo">
+                            <img src="./images/cash icon/cash logo.png" width="20px">
+                        </div>
+                        <div class="cash_text">
+                            <a href="#">Cash on Delivery </a>
+                        </div>
+                    </div>
+                    <!--    END OF HEADER -->
+                    <div class="Installment_men">
+                        <div class="Installment_logo">
+                            <img src="./images/installment icon/instalment logo.png" width="20px">
+                        </div>
+                        <div class="Installment_text">
+                            <a href="#"> Installment </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    END OF HEADER -->
+
+        <div class="card_item_men">
+            <div class="item_dv_men">
+                <div class="item_found_men">
+                    <div class="item_found_text">
+                        913 Item found for
+                    </div>
+                    <div class="laptop_text">
+                        "Laptops"
+                    </div>
+                    <div class="short_by">
+                        Short by:
+                    </div>
+                    <div class="best_match_dv">
+                        <a class="best_text" href="#">Best Match</a>
+                    </div>
+                    <div class="viwe_men">
+                        Viwe:
+                    </div>
+                    <div class="viwe_icon">
+                        <i class="fa-brands fa-windows"></i>
+                    </div>
+                </div>
+            </div>
+            <!--end off card  -->
+            <div class="card_men">
+                <div class="card1">
+                    <div class="card1_img">
+                        <a href="#"> <img src="./images/prodect1 img/caed_img3.jpeg" width="100%" height="100%"> </a>
+                    </div>
+                    <div class="card1_text_dv">
+                        <a class="text1" href="#">
+                            <p> Hp Chromebook G8-4gb Ram</p>DDR-3 32GB SSD EMM-11..
+                        </a>
+                    </div>
+                    <div class="star_dv star">
+                        <i class="fa-solid fa-star"></i>
+                        <a class="star_text" href="#"> 4.7/5(224) - 1k sold</a>
+                    </div>
+                    <div class="free_delevery">
+                        <a class="free" href="#"> Free Delevery</a>
+                    </div>
+                    <div class="Rs_dv">
+                        <a class="Rs" href="#"> Rs: 949,999 </a>
+                        <div class="Rs_del">
+                            <div class="Rs_Del">
+                                <a class="no_dis" href="#">
+                                    <del>Rs.10,000</del>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--    END OF card -->
+                <div class="card1">
+                    <div class="card1_img">
+                        <a href="#"> <img src="./images/prodect1 img/card_img1.jpg" width="100%" height="100%"> </a>
+                    </div>
+                    <div class="card1_text_dv">
+                        <a class="text1" href="#">
+                            <p> Hp Chromebook G8-4gb Ram</p>DDR-3 32GB SSD EMM-11..
+                        </a>
+                    </div>
+                    <div class="star_dv star">
+                        <i class="fa-solid fa-star"></i>
+                        <a class="star_text" href="#"> 4.7/5(224) - 1k sold</a>
+                    </div>
+                    <div class="free_delevery">
+                        <a class="free" href="#"> Free Delevery</a>
+                    </div>
+                    <div class="Rs_dv">
+                        <a class="Rs" href="#"> Rs: 10,700 </a>
+                        <div class="Rs_del">
+                            <div class="Rs_Del">
+                                <a class="no_dis" href="#">
+                                    <del>Rs.12,000</del>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD -->
+                <div class="card1">
+                    <div class="card1_img">
+                        <a href="#"> <img src="./images/prodect1 img/card_img.jpg" width="100%" height="100%"> </a>
+                    </div>
+                    <div class="card1_text_dv">
+                        <a class="text1" href="#">
+                            <p> Hp Chromebook G8-4gb Ram</p>DDR-3 32GB SSD EMM-11..
+                        </a>
+                    </div>
+                    <div class="star_dv star">
+                        <i class="fa-solid fa-star"></i>
+                        <a class="star_text" href="#"> 4.7/5(224) - 1k sold</a>
+                    </div>
+                    <div class="free_delevery">
+                        <a class="free" href="#"> Free Delevery</a>
+                    </div>
+                    <div class="Rs_dv">
+                        <a class="Rs" href="#"> Rs: 8,000 </a>
+                        <div class="Rs_del">
+                            <div class="Rs_Del">
+                                <a class="no_dis" href="#">
+                                    <del>Rs.9,500</del>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD -->
+                <div class="card1">
+                    <div class="card1_img">
+                        <a href="#"> <img src="./images/prodect1 img/card_img2.jpg" width="100%" height="100%"> </a>
+                    </div>
+                    <div class="card1_text_dv">
+                        <a class="text1" href="#">
+                            <p> Hp Chromebook G8-4gb Ram</p>DDR-3 32GB SSD EMM-11..
+                        </a>
+                    </div>
+                    <div class="star_dv star">
+                        <i class="fa-solid fa-star"></i>
+                        <a class="star_text" href="#"> 4.7/5(224) - 1k sold</a>
+                    </div>
+                    <div class="free_delevery">
+                        <a class="free" href="#"> Free Delevery</a>
+                    </div>
+                    <div class="Rs_dv">
+                        <a class="Rs" href="#"> Rs: 14,999</a>
+                        <div class="Rs_del">
+                            <div class="Rs_Del">
+                                <a class="no_dis" href="#">
+                                    <del>Rs.18,000</del>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    END OF HEADER -->
+
+    <div class="product2_men_dv">
+        <div class="name2_dv">
+            <div class="category_dv">
+                <div class="Category">
+                    <h1> Category </h1>
+                </div>
+                <div class="traditional">
+                    <a class="traditional" href="">Traditional</a>
+                </div>
+                <div class="traditional">
+                    <a class="traditional" href="">Macbook</a>
+                </div>
+                <div class="laptop">
+                    <a class="laptop" href="">Laptop</a>
+                </div>
+            </div>
+            <div class="brand_dv">
+                <div class="brand">
+                    <h2> Brand </h2>
+                </div>
+                <div class="hp">
+                    <a href="">Hp</a>
+                </div>
+                <div class="hp">
+                    <a href="">Dell</a>
+                </div>
+                <div class="hp">
+                    <a href="">Lenovo</a>
+                </div>
+                <div class="hp">
+                    <a href="">Apple</a>
+                </div>
+                <div class="hp">
+                    <a href="">Acer</a>
+                </div>
+                <div class="hp">
+                    <a href="">Daraz Like New</a>
+                </div>
+                <div class="hp">
+                    <a href="">Laptoppers</a>
+                </div>
+                <div class="hp">
+                    <a href="">Viper</a>
+                </div>
+                <div class="viwe_more">
+                    <a class="viwe_more" href="">+ Viwe More</a>
+                </div>
+            </div>
+        </div>
+        <div class="prodect2_dv">
+            <div class="prodect2_card1">
+                <div class="prodect2_card1_img">
+                    <a href="#"> <img src="./images/prodect2 img/card_img.jpg" width="100%" height="100%"> </a>
+                </div>
+                <div class="prodect2_text">
+                    <a class="text2" href="">Hp Chromebook G8-4gb Ram DDR-3 32GB SSD EMM-11..</a>
+                </div>
+                <div class="prodect2_star_dv star2">
+                    <i class="fa-solid fa-star"></i>
+                    <a class="star_text" href="#"> 4.7/5(224) - 1k sold</a>
+                </div>
+                <div class="prodect2_free_delevery">
+                    <a class="prodect2_free" href=""> Free Delevery</a>
+                </div>
+                <div class="prodect2_Rs_dv">
+                    <a class="Rs2" href="#"> Rs: 10,500 </a>
+                    <div class="Rs2_Del">
+                        <a class="no2_dis" href="#">
+                            <del>Rs.12,500</del>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--    END OF HEADER -->
+            <div class="prodect2_card1">
+                <div class="prodect2_card1_img">
+                    <a href="#"> <img src="./images/prodect2 img/card_img1.jpg" width="100%" height="100%"> </a>
+                </div>
+                <div class="prodect2_text">
+                    <a class="text2" href="">Hp Chromebook G8-4gb Ram DDR-3 32GB SSD EMM-11..</a>
+                </div>
+                <div class="prodect2_star_dv star2">
+                    <i class="fa-solid fa-star"></i>
+                    <a class="star_text" href="#"> 4.7/5(224) - 1k sold</a>
+                </div>
+                <div class="prodect2_free_delevery">
+                    <a class="prodect2_free" href=""> Free Delevery</a>
+                </div>
+                <div class="prodect2_Rs_dv">
+                    <a class="Rs2" href="#"> Rs: 57,500 </a>
+                    <div class="Rs2_Del">
+                        <a class="no2_dis" href="#">
+                            <del>Rs.74,500</del>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--    END OF HEADER -->
+            <div class="prodect2_card1">
+                <div class="prodect2_card1_img">
+                    <a href="#"> <img src="./images/prodect2 img/card_img2.jpg" width="100%" height="100%"> </a>
+                </div>
+                <div class="prodect2_text">
+                    <a class="text2" href="">Hp Chromebook G8-4gb Ram DDR-3 32GB SSD EMM-11..</a>
+                </div>
+                <div class="prodect2_star_dv star2">
+                    <i class="fa-solid fa-star"></i>
+                    <a class="star_text" href="#"> 4.7/5(224) - 1k sold</a>
+                </div>
+                <div class="prodect2_free_delevery">
+                    <a class="prodect2_free" href=""> Free Delevery</a>
+                </div>
+                <div class="prodect2_Rs_dv">
+                    <a class="Rs2" href="#"> Rs: 10,250 </a>
+                    <div class="Rs2_Del">
+                        <a class="no2_dis" href="#">
+                            <del>Rs.13,000</del>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--    END OF HEADER -->
+            <div class="prodect2_card1">
+                <div class="prodect2_card1_img">
+                    <a href="#"> <img src="./images/prodect2 img/caed_img3.jpeg" width="100%" height="100%"> </a>
+                </div>
+                <div class="prodect2_text">
+                    <a class="text2" href="">Hp Chromebook G8-4gb Ram DDR-3 32GB SSD EMM-11..</a>
+                </div>
+                <div class="prodect2_star_dv star2">
+                    <i class="fa-solid fa-star"></i>
+                    <a class="star_text" href="#"> 4.7/5(224) - 1k sold</a>
+                </div>
+                <div class="prodect2_free_delevery">
+                    <a class="prodect2_free" href=""> Free Delevery</a>
+                </div>
+                <div class="prodect2_Rs_dv">
+                    <a class="Rs2" href="#"> Rs: 10,200</a>
+                    <div class="Rs2_Del">
+                        <a class="no2_dis" href="#">
+                            <del>Rs.12,500</del>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

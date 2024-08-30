@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input_plus_funtion</title>
+   
+</head>
+
+<body>
+    <h1> This is plus + function </h1>
+    <hr>
+
+
+<input id="input1" type="number" name="I1">
+<input id="input2" type="number" name="I2">
+<br>
+<div id="result"> </div>
+<button type="button" onclick="myMath()"> Calculate </button>
+
+<script>
+    function myMath(){
+        vElement1 = document.getElementById("input1")
+        vVal1 = vElement1.value
+
+        vElement2 = document.getElementById('input2')
+        vVal2 = vElement2.value
+
+        vResult1 = document.getElementById('result')
+        vResult1.innerText = parseFloat(vVal1) + parseFloat(vVal2) 
+        
+    }
+
+</script>
+
+</body>
+
+</html>

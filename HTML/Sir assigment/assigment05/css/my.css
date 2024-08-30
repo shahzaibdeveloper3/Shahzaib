@@ -1,0 +1,28 @@
+.main_header{
+    border: 2px solid black;
+    width: 100%;
+    height: 60px;
+}
+.a_b_men_dv{
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    height: 600px;
+}
+.A{
+    margin-top: 30px;
+    background-color:aqua ;
+    border: 2px solid black;
+    width: 50%;
+    height: 500px;
+}
+.A:hover{
+    width: 20%;
+}
+.B{
+    margin-top: 30px;
+    background-color: cadetblue;
+    border: 2px solid black;
+    width: 80%;
+    height: 500px;
+}

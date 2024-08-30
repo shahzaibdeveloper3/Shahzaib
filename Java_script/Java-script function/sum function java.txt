@@ -1,0 +1,7 @@
+        let sum = 0
+        let n = prompt('enter tha value')
+
+        for (let i = 1; i <= n; i++) {
+            sum += (i);
+        }
+        document.write('sum vlues ' + n + 'nature number is ' + sum)

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text_color_change</title>
+    <style>
+        .result.innerHTML{
+            color: red;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div id="first">
+        <h1> This Is First Page </h1>
+    </div>
+    <button onclick="change()"> Change </button>
+
+
+<script>
+
+        function change(){
+            var result = document.getElementById('first')
+            result.innerHTML = '<h1> secound page </h1> '
+
+        }
+
+</script>
+
+    
+</body>
+</html>

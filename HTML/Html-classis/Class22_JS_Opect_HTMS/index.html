@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/my.css">
+    <script src="./js/data.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <script>
+        var noOfItems = prdouctCompuer["noOfItems"]
+        var vHTML
+
+        console.log(noOfItems)
+        vHTML = '<div class="content">';
+        vCount = 0;
+        for (i = 1; i <= noOfItems; i++) {
+            vCount = vCount + 1;
+            if (vCount == 1) {
+                vHTML = vHTML + '    <div class = "row" > ';
+            }
+
+            vHTML = vHTML + '<div class="col">';
+            vHTML = vHTML + '<div class="product-img">';
+            vHTML = vHTML    + '    <img src="./imges/computer/computer' + i + '.jpg" alt="">';
+            vHTML = vHTML + '    </div>';
+            vHTML = vHTML + '   <div class="product-desc mac-tac">';
+            vHTML = vHTML + prdouctCompuer["productDesc" + i]
+            vHTML = vHTML + '    </div>';
+            vHTML = vHTML + '    <div class="prdouct-rating mac-tac">';
+            vRating = prdouctCompuer["productRating" + i]
+            for (r = 1; r <= 5; r++) {
+                if (r <= vRating) {
+                    vHTML = vHTML + '        <span class="fa fa-star rated-color"></span>';
+                }
+                else {
+                    vHTML = vHTML + '        <span class="fa fa-star "> </span>';
+                }
+
+            }
+
+
+
+
+            vHTML = vHTML + '    </div>';
+            vHTML = vHTML + '    <div class="product-price mac-tac">';
+            vDiscount = prdouctCompuer["discountPricse" + i]
+            if (vDiscount == 0) {
+                vHTML = vHTML + '    Price: ' + prdouctCompuer["productPrice" + i];
+
+            }
+            else {
+
+                vHTML = vHTML + '    Price: ' + prdouctCompuer["discountPricse" + i] + ' <span> <del>' + prdouctCompuer["productPrice" + i] + ' </del></span>';
+            }
+
+
+
+            vHTML = vHTML + '    </div>';
+            vHTML = vHTML + '    </div>';
+
+            if (vCount == 4) {
+                vHTML = vHTML + '    </div>';
+                vCount = 0;
+            }
+        }
+        vHTML = vHTML + '    </div>';
+
+        console.log(vHTML)
+        document.write(vHTML)
+    </script>
+    <!-- 
+    <div class="content">
+        <div class="row">
+            <div class="col">
+                <div class="product-img">
+                    <img src="./imges/computer/computer1.jpg" alt="">
+                </div>
+                <div class="product-desc mac-tac">
+                    HP Cmputer i7 64 bits
+                </div>
+                <div class="prdouct-rating mac-tac">
+                    <span class="fa fa-star rated-color"></span>
+                    <span class="fa fa-star rated-color"></span>
+                    <span class="fa fa-star rated-color"></span>
+                    <span class="fa fa-star rated-color"></span>
+                    <span class="fa fa-star "> </span>
+                </div>
+                <div class="product-price mac-tac">
+                    Price: 1000 <span> <del> 15000</del></span>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-img">
+                    <img src="./imges/computer/computer1.jpg" alt="">
+                </div>
+                <div class="product-desc mac-tac">
+                    HP Cmputer i7 64 bits
+                </div>
+                <div class="prdouct-rating mac-tac">
+                    <span class="fa fa-star rated-color"></span>
+                    <span class="fa fa-star rated-color"></span>
+                    <span class="fa fa-star rated-color"></span>
+                    <span class="fa fa-star rated-color"></span>
+                    <span class="fa fa-star "> </span>
+                </div>
+                <div class="product-price mac-tac">
+                    Price: 1000 <span> <del> 15000</del></span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>

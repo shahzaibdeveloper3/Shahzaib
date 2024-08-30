@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input_table</title>
+</head>
+
+<body>
+    <center>
+        Table number : <input type="number" id="Number">
+
+        <!-- <input type="number" id="Number1"> -->
+
+        <button onclick="myFunction()">click</button>
+    </center>
+    <center>
+        <br><br>
+        <div id="display">
+
+        </div>
+    </center>
+
+    <script>
+        function myFunction() {
+            var vNumber = document.getElementById('Number').value
+            var vTab = document.getElementById('display')
+            var i, z;
+            for (let i = 1; i <= 10; i++) {
+                vTab.innerHTML += vNumber + ' x ' + i + ' = ' + vNumber * i + '<br>' + '<hr>';
+
+            }
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

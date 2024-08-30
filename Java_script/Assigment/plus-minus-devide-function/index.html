@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input type table</title>
+    <style>
+        .containt{
+            width: 40%;
+            height: 100%;
+            border: 2px solid rgb(0, 0, 6);
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <br> <br>
+    <center>
+    <input  type="number" id="number" name="vname1"> 
+    <button onclick="myTable()">Click</button>
+
+    <br>
+</center>
+<hr>
+<center>
+
+    <div  class="containt" id="display">
+        
+    </div>
+
+</center>
+    <script>
+        function myTable(){
+            var vName = document.getElementById('number').value;
+            var vData = document.getElementById('display');
+            var i, z;
+                for(i = 1; i <= 10; i++){
+                
+                    vData.innerHTML += vName  +  ' x '  +  i  +  ' = '  +  vName   * i + '<br>' + '<hr>';
+    
+                }
+                
+        }
+    
+        
+        
+
+
+    </script>
+    
+
+
+</body>
+</html>
+

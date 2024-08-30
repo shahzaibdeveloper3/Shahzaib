@@ -1,0 +1,113 @@
+/*
+
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+* 769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, 
+*/
+body{
+    background-color: aqua;
+}
+#header{
+	border: 2px solid red;
+	display:flex;
+	height:60px;
+	top:0px;
+	position:sticky;
+}
+
+.my-name{
+	top:61px;
+	position:fixed;
+	background-color:green;
+	width:200px;
+	left:-180px;
+	z-index:10;
+}
+.my-name:hover{
+	left:0px;
+}
+
+.fix-70{
+	top:70px;
+	position:sticky;
+}
+
+
+#header-logo{
+	
+	width:12%;
+}
+
+#header-logo-img{
+	width:100%;
+	height:100%;
+}
+
+#header-text{
+	width:25%;
+}
+
+
+#header-btn{
+	background-color:white;
+	width:63%;
+	text-align:right;
+	display:flex;
+	justify-content: right;
+	align-items:center;
+}
+
+.header-btns{
+	margin:10px;
+	padding: 5px 15px;
+	background-color:blue;
+	color:white;
+
+}
+
+
+
+.mac-hb{
+	padding-left:8px;
+	color:gray;
+	
+	
+}
+
+
+
+.main{
+    display: flex;
+}
+
+.box1{
+    width: 10%;
+    height: 150px;
+    border: 2px solid red;
+}
+
+.header-mobile{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    body{
+            background-color: greenyellow;
+    }
+    .main{
+        display: block;
+    }
+    .box1{
+        width: 100%;
+    }
+    .header-mobile{
+        display: block;
+    }
+    
+    .header-desktop{
+        display: none;
+    }
+    
+}
+

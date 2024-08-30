@@ -1,0 +1,23 @@
+.row{
+    display: flex;
+    width: 100%;
+}
+
+.col
+{
+    border: 1px solid gray;
+    width: 250px;
+   
+}
+
+.mac-tac{
+    text-align: center;
+}
+.rated-color{
+    color: lightgreen;
+}
+
+.product-img{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,147 @@
+body {
+    background-color: rgb(255, 255, 255)
+}
+
+marquee {
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.Men_header {
+    display: flex;
+    width: 100%;
+    height: 30px;
+}
+
+.M_btn_dv {
+    width: 90%;
+    height: 30px;
+}
+
+.m_btn_serch {
+    width: 10%;
+    height: 30px;
+}
+
+.M {
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+    margin: 40px;
+}
+
+.M:hover {
+    box-shadow: 3px 1px 3px 1px;
+    padding: 5px;
+    color: red;
+}
+
+.M1 {
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    ;
+}
+
+.head_J {
+    width: 100%;
+    height: 60px;
+}
+
+
+
+.J {
+    color: rgb(0, 0, 0);
+    font-size: 60PX;
+    margin-bottom: 100px;
+}
+
+.box1_btn {
+    display: flex;
+    width: 100%;
+    height: 40px;
+
+}
+
+.photo {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.photo:hover {
+    color: red;
+    box-shadow: 2px 1px 2px 1px;
+    border-radius: 2px solid black;
+}
+
+.men_img1 {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.m_img {
+    width: 100%;
+    height: 500px;
+
+}
+
+.Profassinal_dv {
+    position: absolute;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    height: 700px;
+    width: 100%;
+}
+
+.Profassinal_img1 {
+    width: 55%;
+    height: 700px;
+
+}
+
+.post1 {
+    margin-top: 20px;
+    display: flex;
+    width: 60%;
+    height: 600px;
+    margin-left: 300px;
+}
+
+
+.post_txt {
+    width: 60%;
+    height: 30px;
+    margin-left: 300px;
+}
+
+.Profassinal_dv1 {
+    display: block;
+    width: 40%;
+    height: 700px;
+}
+
+.img1 {
+    display: block;
+    width: 50%;
+    height: 277px;
+    margin-top: 25px;
+
+}
+.profassinal_dv2{
+    border: 2px solid black;
+    width: 100%;
+    height: 600px;
+}

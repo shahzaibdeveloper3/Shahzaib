@@ -1,0 +1,26 @@
+.content{
+    border: 2px solid black;
+}
+.row{
+    border: 2px solid rgb(252, 2, 2);
+    display: flex;
+    width: 100%;
+}
+
+.col{
+    border: 1px solid gray;
+    width: 250px;
+   
+}
+
+.mac-tac{
+    text-align: center;
+}
+.rated-color{
+    color: lightgreen;
+}
+
+.product-img{
+    display: flex;
+    justify-content: center;
+}

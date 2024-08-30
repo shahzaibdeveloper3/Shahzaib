@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+
+        }
+
+        .blue {
+            color: blue;
+
+        }
+
+        .f20b {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .f30b {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="text1" class=""> This is Text 1 </div>
+    <button type="button" onclick="changeColor('red f20b')"> Red Color</button>
+    <button type="button" onclick="changeColor('green f20b')"> Green Color</button>
+    <button type="button" onclick="changeColor('blue f20b')"> Blue Color</button>
+    <button type="button" onclick="changeColor('')"> Clear Color</button>
+    <button type="button" onclick="clearClass()"> Clear Color 2</button>
+    <button type="button" onclick="RestClass()"> Rest</button>
+
+    <script>
+        oldClassName = ' '
+
+        function changeColor(pColor) {
+            vElText1 = document.getElementById('text1')
+            oldClassName = vElText1.className
+            vElText1.className = pColor
+            console.log(oldClassName)
+
+        }
+
+        function clearClass(pColor) {
+            vElText1 = document.getElementById('text1')
+            vElText1.classList.remove("f20b")
+            vElText1.classList.add("f30b")
+
+        }
+
+        function RestClass() {
+            vElText1 = document.getElementById('text1')
+            vElText1.className = oldClassName
+
+        }
+    </script>
+</body>
+
+</html>

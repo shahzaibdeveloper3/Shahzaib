@@ -1,0 +1,18 @@
+:root{
+    --bg-color   : white;
+    --font-size : 16px;
+
+}
+
+
+.header{
+    background-color: var(--bg-color);
+    /* font-size: var(--font-size); */
+    height: 300px;
+    width:100%;
+
+}
+
+html{
+    font-size:  20px;
+}

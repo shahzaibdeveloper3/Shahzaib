@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+    JavaScript Operators
+    -------------------
+    JavaScript operators are special symbols that perform operations on one or more values (operands) 
+
+Type of Opertor
+-------------------
+Arithmetic Operators
+Assignment Operators
+Comparison Operators
+String Operators
+Logical Operators
+
+
+Assignment Operators
+--------------------------
+Operator	Name	Example
+=	Assignment Operator	a = 7;
++=	Addition Assignment	a += 5;  // a = a + 5
+-=	Subtraction Assignment	a -= 2;  // a = a - 2
+*=	Multiplication Assignment	a *= 3;  // a = a * 3
+/=	Division Assignment	a /= 2;  // a = a / 2
+%=	Remainder Assignment	a %= 2;  // a = a % 2
+**=	find Power (Exponentiation Assignment)	a **= 2;  // a = a**2
+++
+--
+
+
+Arithmetic Operators
+----------------------
+
++	Addition	3 + 4  // 7
+-	Subtraction	5 - 3  // 2
+*	Multiplication	2 * 3  // 6
+/	Division	4 / 2  // 2
+%	Remainder	5 % 2  // 1
+++	Increment (increments by 1)	++5 or 5++  // 6
+--	Decrement (decrements by 1)	--4 or 4--  // 3
+**	Exponentiation (Power)	4 ** 2  // 16
+
+String Operators
+---------------------------
++	t3 = t1 + t2	"Good "	"Morning"	 "Good Morning"	
++=	t1 += t2	"Good Morning"	"Morning"	
+
+
+
+
+
+    -->
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // declare
+        var     a;
+        let     b;
+        const   c =  3;
+        // Assingn
+        a = 5;
+        b = 10;
+         // We can not agin declare  and change value of constant variable
+        // c = 20;
+
+        console.log('a = ' +  a);
+        console.log('b = ' +  b);
+        console.log('c = ' +  c); 
+
+        a = 15;
+        b = 20;
+        console.log('a = ' +  a);
+        console.log('b = ' +  b);
+
+        var a = 15;
+
+        // We cannot redclare of let declared variable
+        // let b = 20;
+        console.log('a = ' +  a);
+        console.log('b = ' +  b);
+
+        b  = a;
+        console.log('"b = a" = ' +  b);
+
+        b  = b;
+        console.log('b = a = ' +  b);
+
+        b  = b + 10;
+        console.log('b  = ' +  b);     
+
+
+        b  = b + 1;
+        console.log('b  = ' +  b);      
+
+        b++;
+        console.log('b  = ' +  b);     
+
+        // b  = b + 1; = b++;
+        b--
+        console.log('b  = ' +  b);     
+        
+        b = b - 1;
+        console.log('b  = ' +  b);     
+
+        console.log('b++  = ' +  b++); 
+        console.log('b  = ' +  b);   
+
+        console.log('b++  = ' +  ++b); 
+        console.log('b  = ' +  b);   
+        b += 5;
+        // b = b + 5 
+        console.log('b  = ' +  b);  
+
+       b =  b * 2;
+       console.log('b  =b =  b * 2 ' +  b);  
+       b *= 2;
+       console.log('b  =b *= 2 ' +  b);  
+
+       document.write(b);
+
+       let d = 5 ** 2;
+        // 5* 5
+       console.log('d ' + d);  
+
+        d = 5 ** 3;
+        // 5* 5 
+       console.log('d ' + d);  
+
+
+       let e = 5 % 2;
+        // 5* 5
+       console.log('e ' + e);  
+        e = 4 % 2;
+        // 5* 5
+       console.log('e ' + e); 
+
+       e = 9 % 5;
+        // 5* 5
+       console.log('e ' + e); 
+
+       let firstName = 'Muhammad'
+       let lastName = 'Chauhan'
+
+       console.log('firstName = ' + firstName);  
+       let fullName =  firstName + lastName;
+
+       console.log('fullName = ' + fullName ); 
+
+        fullName =  firstName + ' ' + lastName;
+
+        console.log('fullName = ' + fullName ); 
+        // t1 += t2
+        fullName +=  ' ' + lastName
+        console.log('fullName2 = ' + fullName ); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

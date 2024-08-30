@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .box {
+            width: 100%;
+            height: 200px;
+            animation-name: car_run;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+        }
+
+        .car_dv {
+            display: block;
+            width: 100%;
+            height: 100px;
+        }
+
+        .car {
+            height: 100px;
+        }
+
+        .wheel_1 {
+            margin-top: -43px;
+            width: 6%;
+            height: 50px;
+            margin-left: 54px;
+        }
+
+        .wheel_2 {
+            width: 6%;
+            height: 50px;
+            margin-left: 210px;
+            margin-top: -50px;
+        }
+
+        .wheel_2 img,
+        .wheel_1 img {
+            animation-name: wheel_run;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes car_run {
+            0% {
+                transform: translateX(1%);
+            }
+
+            80% {
+                transform: translateX(80%);
+            }
+        }
+
+        @keyframes wheel_run {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            80% {
+                transform: rotate(360deg);
+            }
+        }
+
+        hr {
+            margin-top: -110px;
+            border: 2px solid rgb(72, 69, 69);
+        }
+
+        H1 {
+            color: ;
+            background-color: aqua;
+        }
+        .road{
+            margin-top: -200px;
+        }
+    </style>
+</head>
+
+<body>
+    <br><br><br>
+    <div class="box"><br><br><br><br><br>
+        <div class="car_dv">
+            <img class="car" src="./images/car/car.png">
+
+        </div>
+        <div class="wheel_1">
+            <img src="./images/wheel/wheel.png" width="35px" height="35px">
+        </div>
+        <div class="wheel_2">
+            <img src="./images/wheel/wheel.png" width="35px" height="35px">
+        </div>
+
+    </div>
+    <hr>
+    <div class="road">
+        <img src="./images/road/road image.jpg" width="100%" height="400px">
+    </div>
+
+
+
+
+
+</body>
+
+</html>
